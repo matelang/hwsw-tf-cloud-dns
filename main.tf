@@ -3,3 +3,7 @@ module "dns" {
 
   name = "module.hwsw.binhatch.dev"
 }
+
+output "zone_id" {
+  value = module.dns.zone_id
+}
